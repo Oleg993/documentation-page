@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1_6</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left-block">
+        <h2><a href="index.html">CSS displays</a></h2>
+        <ul>
+          <li><a href="flexPage.html">Flex</a></li>
+          <li><a href="gridPage.html">Grid</a></li>
+          <li><a href="blockPage.html">Block</a></li>
+          <li><a href="InlinePage.html">Inline</a></li>
+          <li><a href="Inline-blockPage.html">Inline-block</a></li>
+          <li><a href="nonePage.html">None</a></li>
+        </ul>
+      </div>
+      <div class="right-block">
+        <h2>Grid</h2>
+        <h3>Grids</h3>
+        <p>
+          CSS Grid Layout is a two-dimensional layout system for the web. It
+          lets you lay content out in rows and columns. It has many features
+          that make building complex layouts straightforward. This article will
+          explain all you need to know to get started with page layout.
+        </p>
+        <h3>What is grid layout?</h3>
+        <p>
+          A grid is a collection of horizontal and vertical lines creating a
+          pattern against which we can line up our design elements. They help us
+          to create layouts in which our elements won't jump around or change
+          width as we move from page to page, providing greater consistency on
+          our websites.
+        </p>
+        <p>
+          A grid will typically have columns, rows, and then gaps between each
+          row and column. The gaps are commonly referred to as gutters.
+        </p>
+        <h3>Creating your grid in CSS</h3>
+        <p>
+          Having decided on the grid that your design needs, you can use CSS
+          Grid Layout to create it. We'll look at the basic features of Grid
+          Layout first and then explore how to create a simple grid system for
+          your project.
+        </p>
+        <h3>Defining a grid</h3>
+        <p>
+          As a starting point, download and open the starting point file in your
+          text editor and browser (you can also see it live here). You will see
+          an example with a container, which has some child items. These display
+          in normal flow by default, so the boxes display one below the other.
+          We'll be working with this file for the first part of this lesson,
+          making changes to see how its grid behaves.
+        </p>
+        <p>
+          To define a grid we use the grid value of the display property. As
+          with Flexbox, this enables Grid Layout; all of the direct children of
+          the container become grid items. Add this to the CSS inside your file
+        </p>
+        <p>
+          Unlike Flexbox, the items will not immediately look any different.
+          Declaring display: grid gives you a one column grid, so your items
+          will continue to display one below the other as they do in normal
+          flow.
+        </p>
+        <p>
+          To see something that looks more grid-like, we'll need to add some
+          columns to the grid. Let's add three 200-pixel columns. You can use
+          any length unit or percentage to create these column tracks.
+        </p>
+        <p>
+          Add the second declaration to your CSS rule, then reload the page. You
+          should see that the items have rearranged themselves such that there's
+          one in each cell of the grid.
+        </p>
+        <h3>Flexible grids with the fr unit</h3>
+        <p>
+          Change your track listing to the following definition, creating three
+          1fr tracks.
+        </p>
+        <p>
+          You should now see that you have flexible tracks. The fr unit
+          distributes space proportionally. So if you specify different positive
+          values for your tracks like so.
+        </p>
+        <p>
+          The first track now gets 2fr of the available space and the other two
+          tracks get 1fr, making the first track larger. You can mix fr units
+          with fixed length units — in such a case the space needed for the
+          fixed tracks is used up first; the remaining space is then distributed
+          to the other tracks.
+        </p>
+        <h3>Gaps between tracks</h3>
+        <p>
+          To create gaps between tracks we use the properties column-gap for
+          gaps between columns, row-gap for gaps between rows, and gap as a
+          shorthand for both.
+        </p>
+        <h3>Repeating track listings</h3>
+        <p>
+          You can repeat all or merely a section of your track listing using the
+          CSS repeat() function. Change your track listing to the following.
+        </p>
+        <p>
+          You'll now get three 1fr tracks just as before. The first value passed
+          to the repeat() function specifies the number of times you want the
+          listing to repeat, while the second value is a track listing, which
+          may be one or more tracks that you want to repeat.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

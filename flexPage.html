@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1_6</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left-block">
+        <h2><a href="index.html">CSS displays</a></h2>
+        <ul>
+          <li><a href="flexPage.html">Flex</a></li>
+          <li><a href="gridPage.html">Grid</a></li>
+          <li><a href="blockPage.html">Block</a></li>
+          <li><a href="InlinePage.html">Inline</a></li>
+          <li><a href="Inline-blockPage.html">Inline-block</a></li>
+          <li><a href="nonePage.html">None</a></li>
+        </ul>
+      </div>
+      <div class="right-block">
+        <h2>Flexbox</h2>
+        <h3>Flexbox</h3>
+        <p>
+          Flexbox is a one-dimensional layout method for arranging items in rows
+          or columns. Items flex (expand) to fill additional space or shrink to
+          fit into smaller spaces. This article explains all the fundamentals.
+        </p>
+        <h3>Why Flexbox?</h3>
+        <p>
+          For a long time, the only reliable cross-browser compatible tools
+          available for creating CSS layouts were features like floats and
+          positioning. These work, but in some ways they're also limiting and
+          frustrating.
+        </p>
+        <p>
+          The following simple layout designs are either difficult or impossible
+          to achieve with such tools in any kind of convenient, flexible way:
+        </p>
+        <ul>
+          <li>Vertically centering a block of content inside its parent.</li>
+          <li>
+            Making all the children of a container take up an equal amount of
+            the available width/height, regardless of how much width/height is
+            available.
+          </li>
+          <li>
+            Making all columns in a multiple-column layout adopt the same height
+            even if they contain a different amount of content.
+          </li>
+        </ul>
+        <p>
+          As you'll see in subsequent sections, flexbox makes a lot of layout
+          tasks much easier. Let's dig in!
+        </p>
+        <h3>Introducing a simple example</h3>
+        <p>
+          In this article, you'll work through a series of exercises to help you
+          understand how flexbox works. To get started, you should make a local
+          copy of the first starter file — flexbox0.html from our GitHub repo.
+          Load it in a modern browser (like Firefox or Chrome) and have a look
+          at the code in your code editor. You can also see it live here.
+        </p>
+        <h3>The flex model:</h3>
+        <p>
+          When elements are laid out as flex items, they are laid out along two
+          axes:
+        </p>
+        <ul>
+          <li>
+            The main axis is the axis running in the direction the flex items
+            are laid out in (for example, as a row across the page, or a column
+            down the page.) The start and end of this axis are called the main
+            start and main end.
+          </li>
+          <li>
+            The cross axis is the axis running perpendicular to the direction
+            the flex items are laid out in. The start and end of this axis are
+            called the cross start and cross end.
+          </li>
+          <li>
+            The parent element that has display: flex set on it is called the
+            flex container.
+          </li>
+          <li>
+            The items laid out as flexible boxes inside the flex container are
+            called flex items.
+          </li>
+        </ul>
+        <p>
+          Bear this terminology in mind as you go through subsequent sections.
+          You can always refer back to it if you get confused about any of the
+          terms being used.
+        </p>
+        <h3>Columns or rows?</h3>
+        <p>
+          Flexbox provides a property called flex-direction that specifies which
+          direction the main axis runs (which direction the flexbox children are
+          laid out in). By default this is set to row, which causes them to be
+          laid out in a row in the direction your browser's default language
+          works in (left to right, in the case of an English browser).
+        </p>
+        <h3>Wrapping</h3>
+        <p>
+          One issue that arises when you have a fixed width or height in your
+          layout is that eventually your flexbox children will overflow their
+          container, breaking the layout. Have a look at our flexbox-wrap0.html
+          example and try viewing it live.
+        </p>
+        <p>
+          We now have multiple rows. Each row has as many flexbox children
+          fitted into it as is sensible. Any overflow is moved down to the next
+          line. The flex: 200px declaration set on the articles means that each
+          will be at least 200px wide. We'll discuss this property in more
+          detail later on. You might also notice that the last few children on
+          the last row are each made wider so that the entire row is still
+          filled.
+        </p>
+        <p>
+          But there's more we can do here. First of all, try changing your
+          flex-direction property value to row-reverse. Now you'll see that you
+          still have your multiple row layout, but it starts from the opposite
+          corner of the browser window and flows in reverse.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
